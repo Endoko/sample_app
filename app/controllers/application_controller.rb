@@ -3,4 +3,5 @@ class ApplicationController < ActionController::Base
     render html:"Yubi Yubi"
   end  
   protect_from_forgery with: :exception
+  include SessionsHelper
 end
